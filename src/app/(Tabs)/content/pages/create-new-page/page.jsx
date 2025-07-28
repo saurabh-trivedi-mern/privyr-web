@@ -1,7 +1,10 @@
 'use client';
+
 import { useSearchParams } from 'next/navigation';
 import ImageGalleryFormModal from '../../components/ImageGalleryFormModal';
 import ProductOrEventFormModal from '../../components/ProductOrEventFormModal';
+
+export const dynamic = 'force-dynamic';
 
 export default function CreateNewPage() {
   const searchParams = useSearchParams();
