@@ -1,20 +1,12 @@
-'use client';
+// app/(Tabs)/content/pages/create-new-page/page.jsx
 
-import { useSearchParams } from 'next/navigation';
-import ImageGalleryFormModal from '../../components/ImageGalleryFormModal';
-import ProductOrEventFormModal from '../../components/ProductOrEventFormModal';
+import React, { Suspense } from 'react';
+import CreateNewPageClient from './CreateNewPageClient';
 
-export const dynamic = 'force-dynamic';
-
-export default function CreateNewPage() {
-  const searchParams = useSearchParams();
-  const type = searchParams.get('type');
-
+export default function CreateNewPagePage() {
   return (
-    <div className="w-full max-w-[1024px] mx-auto px-4">
-      {type === 'image-gallery' && <ImageGalleryFormModal />}
-      {type === 'product-event' && <ProductOrEventFormModal />}
-      {!type && <p className="text-center text-gray-500 py-10">Please select a template.</p>}
-    </div>
+    <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+      <CreateNewPageClient />
+    </Suspense>
   );
 }
