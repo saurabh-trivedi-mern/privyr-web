@@ -19,7 +19,7 @@ export default function ClientsPage() {
 
       <ClientsTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      <div className="bg-white rounded-md shadow-sm p-4 md:p-6 space-y-6 min-h-[400px]">
+      <div className="bg-white p-4 md:p-6 space-y-6 min-h-[400px]">
         {activeTab === 2 ? (
           <FollowUpEmptyState />
         ) : activeTab === 3 ? (

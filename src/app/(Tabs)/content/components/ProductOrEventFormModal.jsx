@@ -26,11 +26,11 @@ export default function ProductOrEventFormModal() {
     { icon: <FaLink />, label: 'Add Website Link' },
     { icon: <FaPaperclip />, label: 'Add Attachment' },
     { icon: <FaYoutube />, label: 'Add YouTube Video' },
-    { icon: <FaMapMarkerAlt />, label: 'Add Google Map' },
+    { icon: <FaMapMarkerAlt />, label: 'Add Google Map' }
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div className="max-w-[1024px] w-full mx-auto px-4 sm:px-0 py-6">
       {/* Breadcrumb */}
       <p className="text-sm text-gray-500 mb-2">
         <span className="text-black font-medium">Content</span> {'>'}{' '}
@@ -38,8 +38,8 @@ export default function ProductOrEventFormModal() {
       </p>
 
       {/* Heading */}
-      <h1 className="text-2xl font-bold mb-1">Create New Page</h1>
-      <p className="text-gray-600 mb-6">Product or Event Page</p>
+      <h1 className="text-[32px] font-bold mb-1">Create New Page</h1>
+      <p className="text-[16px] font-normal text-black mb-6">Product or Event Page</p>
 
       {/* Form Container */}
       <div className="bg-white p-4 sm:p-6 rounded-lg shadow-sm space-y-6">
@@ -47,45 +47,44 @@ export default function ProductOrEventFormModal() {
         {/* Title */}
         <div>
           <div className="flex justify-between mb-1">
-            <label className="font-medium">Title</label>
+            <label className="text-[14px] font-normal">Title*</label>
             <span className="text-xs text-gray-500">Required <span className="text-red-500">*</span></span>
           </div>
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full bg-gray-100 px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
-            placeholder="Enter title"
+            className="w-full bg-gray-100 px-3 py-2 rounded text-sm focus:outline-none border border-gray-200"
           />
         </div>
 
         {/* Description */}
         <div>
-          <label className="block font-medium mb-1">Description</label>
+          <label className="block text-[14px] font-normal mb-1">Description</label>
+          <label className="block text-[12px] text-[#696D77] font-normal mb-1">Add a description about your product or event</label>
           <textarea
             rows={4}
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className="w-full bg-gray-100 px-3 py-2 rounded text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
-            placeholder="Add a description about your product or event"
+            className="w-full bg-gray-100 px-3 py-2 rounded text-sm focus:outline-none border border-gray-200 resize-none"
           />
         </div>
 
         {/* Image Upload */}
         <div>
           <div className="flex justify-between mb-1">
-            <label className="font-medium">Image Gallery</label>
+            <label className="text-[14px] font-normal">Image Gallery*</label>
             <span className="text-xs text-gray-500">Required <span className="text-red-500">*</span></span>
           </div>
-          <p className="text-sm text-gray-500 mb-2">
+          <p className="text-[12px] text-[#696D77] font-normal mb-1">
             Add images by clicking on 'Upload Images' below
           </p>
 
           <label
             htmlFor="image-upload"
-            className="w-full border-dashed border-2 border-gray-300 p-6 flex items-center justify-center rounded-md cursor-pointer text-teal-600 hover:bg-gray-50 text-sm font-medium gap-2"
+            className="w-full border-dashed border-2 border-gray-300 p-6 flex items-center justify-center rounded-md cursor-pointer text-[#006398] hover:bg-gray-50 text-sm font-medium gap-2"
           >
-            <FaPlus />
+            <FaPlus className="text-[#006398]" />
             Upload Images
           </label>
           <input
@@ -103,9 +102,9 @@ export default function ProductOrEventFormModal() {
           {extraBlocks.map((block, index) => (
             <div
               key={index}
-              className="flex items-center gap-3 px-4 py-3 bg-blue-50 hover:bg-blue-100 rounded-md text-sm font-medium text-blue-700 cursor-pointer"
+              className="flex items-center gap-3 px-4 py-3 bg-[#EAF5FF] hover:bg-[#dceaf6] rounded-md text-sm font-medium text-[#006398] cursor-pointer"
             >
-              <FaPlus className="text-blue-700" />
+              <FaPlus className="text-[#006398]" />
               {block.icon}
               <span>{block.label}</span>
             </div>
@@ -116,13 +115,13 @@ export default function ProductOrEventFormModal() {
         <div className="flex flex-col sm:flex-row gap-4 pt-2">
           <button
             onClick={handleCancel}
-            className="w-full sm:w-1/3 bg-[#e5f4f7] text-teal-700 py-2 rounded font-medium"
+            className="w-full sm:w-1/4 bg-[#D4EBF0] text-[var(--theme-color)] py-2 rounded font-medium"
           >
             Cancel
           </button>
           <button
             onClick={handleSubmit}
-            className="w-full sm:w-2/3 bg-[#00a6a6] hover:bg-[#009191] text-white py-2 rounded font-medium flex items-center justify-center gap-2"
+            className="w-full sm:w-3/4 bg-[var(--theme-color)] hover:bg-[var(--theme-hover-color)] text-white py-2 rounded font-medium flex items-center justify-center gap-2 cursor-pointer"
           >
             <FaCheck className="text-sm" />
             Create Page

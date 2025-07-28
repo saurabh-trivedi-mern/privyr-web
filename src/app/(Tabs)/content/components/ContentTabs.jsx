@@ -14,7 +14,7 @@ export default function ContentTabs({ activeTab, setActiveTab, actionLabel, onAc
             <button
               key={i}
               onClick={() => setActiveTab(i)}
-              className={`p-2 border-b-2 transition text-[14px] font-medium cursor-pointer ${
+              className={`p-1 border-b-2 transition text-[14px] font-medium cursor-pointer ${
                 activeTab === i
                   ? "border-black text-black"
                   : "border-transparent text-gray-500 hover:text-black"
@@ -29,7 +29,7 @@ export default function ContentTabs({ activeTab, setActiveTab, actionLabel, onAc
       {/* Dynamic Button */}
       <button
         onClick={onAction}
-        className="bg-[var(--theme-color)] text-[14px] text-white font-medium uppercase px-4 py-3 rounded hover:bg-[var(--theme-hover-color)] cursor-pointer w-full md:w-auto"
+        className="bg-[var(--theme-color)] md:absolute md:top-35 md:right-70 text-[14px] text-white font-medium uppercase px-4 py-3 rounded-[2px] hover:bg-[var(--theme-hover-color)] cursor-pointer w-full md:w-auto"
       >
         + {actionLabel}
       </button>

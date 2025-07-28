@@ -2,7 +2,7 @@ import { FaRegCalendarAlt } from 'react-icons/fa';
 
 export default function FollowUpEmptyState() {
   return (
-    <div className="bg-white border rounded-md">
+    <div>
       {/* Header Bar */}
       <div className="flex items-center justify-between bg-blue-100 px-4 py-2 rounded-t-md">
         <div className="flex items-center gap-2 text-sm font-medium text-blue-700">

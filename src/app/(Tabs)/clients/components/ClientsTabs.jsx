@@ -14,9 +14,9 @@ export default function ClientsTabs({ activeTab, setActiveTab }) {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-3 sm:mb-0">
+      <div className="flex flex-col md:flex-row md:relative justify-between items-start md:items-center gap-4 mb-3 sm:mb-0">
         {/* Tabs */}
-        <div className="bg-white p-3 w-full md:w-auto">
+        <div className="bg-white p-2 w-full md:w-auto">
           <div className="flex flex-wrap gap-4 md:gap-10">
             {tabs.map((tab, i) => (
               <button
@@ -25,7 +25,7 @@ export default function ClientsTabs({ activeTab, setActiveTab }) {
                 className={`p-2 border-b-2 transition text-[14px] font-medium cursor-pointer ${
                   activeTab === i
                     ? "border-black text-black"
-                    : "border-transparent text-gray-500 hover:text-black"
+                    : "border-transparent"
                 }`}
               >
                 {tab}
@@ -37,7 +37,7 @@ export default function ClientsTabs({ activeTab, setActiveTab }) {
         {/* Add Client Button */}
         <button
           onClick={() => setShowModal(true)}
-          className="bg-[var(--theme-color)] text-[14px] text-white font-medium uppercase px-4 py-3 rounded hover:bg-[var(--theme-hover-color)] cursor-pointer w-full md:w-auto"
+          className="bg-[var(--theme-color)] md:absolute md:right-0 md:bottom-5 text-[14px] text-white font-medium uppercase px-4 py-3 rounded-[2px] hover:bg-[var(--theme-hover-color)] cursor-pointer w-full md:w-auto"
         >
           + Add New Client
         </button>

@@ -6,7 +6,7 @@ export default function ClientsTable({ clients, columns }) {
       {/* Desktop Table View */}
       <div className="hidden sm:block overflow-auto rounded-md">
         <table className="min-w-full bg-white">
-          <thead className="text-left text-[12px] font-normal uppercase text-gray-500 border-b-2 border-gray-200">
+          <thead className="text-left text-[12px] font-normal uppercase text-[#696D77] border-b-2 border-gray-200">
             <tr>
               {columns.map((col) => (
                 <th key={col.key} className="p-4">
@@ -39,7 +39,7 @@ export default function ClientsTable({ clients, columns }) {
             <div className="text-lg font-semibold text-gray-800">{client.name}</div>
 
             {columns.map((col) => {
-              if (col.key === 'name') return null // already rendered at top
+              if (col.key === 'name') return null
               return (
                 <div key={col.key} className="text-sm text-gray-600">
                   <span className="font-medium">{col.label}:</span>{' '}

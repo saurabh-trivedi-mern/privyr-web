@@ -4,7 +4,7 @@ export default function PageRow({ page }) {
   return (
     <>
       {/* Desktop */}
-      <div className="hidden md:grid grid-cols-12 items-center text-sm text-gray-800">
+      <div className="hidden md:grid grid-cols-12 items-center text-sm pb-3 text-gray-800 border-b-1 border-gray-200">
         <div className="col-span-6 flex items-center gap-3">
           <img
             src={page.image}

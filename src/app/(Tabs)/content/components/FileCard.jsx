@@ -17,7 +17,7 @@ export default function FileCard({ file }) {
   return (
     <>
       {/* Desktop layout */}
-      <div className="hidden md:grid grid-cols-12 items-center text-sm text-gray-800">
+      <div className="hidden md:grid grid-cols-12 border-b-1 pb-4 border-gray-200 items-center text-sm text-gray-800">
         <div className="col-span-6 flex items-center gap-2">
           {getIcon(file.type)}
           <span className="font-medium">{file.title}</span>

@@ -38,7 +38,7 @@ export default function MessageManager() {
       </div>
 
       {/* Table Header */}
-      <div className="hidden md:grid grid-cols-12 text-xs text-gray-500 font-medium uppercase border-b border-gray-200 pb-2">
+      <div className="hidden md:grid grid-cols-12 gap-6 text-xs text-[#696D77] font-medium uppercase border-b-2 border-gray-200 pb-2">
         <div className="col-span-4">Title</div>
         <div className="col-span-4">Message Preview</div>
         <div className="col-span-2">Sent</div>
