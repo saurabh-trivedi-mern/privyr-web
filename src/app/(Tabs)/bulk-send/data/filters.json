@@ -1,0 +1,6 @@
+[
+  { "id": "1", "title": "Date Created", "options": ["Any", "Today", "This Week"] },
+  { "id": "2", "title": "Assigned To", "options": ["Any", "You", "Others"] },
+  { "id": "3", "title": "Contacted Status", "options": ["Any", "Contacted", "Not Contacted"] },
+  { "id": "4", "title": "Source", "options": ["Any", "Website", "Referral"] }
+]

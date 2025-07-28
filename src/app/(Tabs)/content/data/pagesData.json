@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Example – ACME Residences",
+    "image": "https://via.placeholder.com/40x40?text=Img1",
+    "private": false,
+    "sharedCount": "-",
+    "lastShared": "-"
+  },
+  {
+    "id": 2,
+    "title": "sample page for testing",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Company_logo_example.svg/200px-Company_logo_example.svg.png",
+    "private": true,
+    "sharedCount": "1 time",
+    "lastShared": "Jul 22 – 03:13 PM"
+  }
+]

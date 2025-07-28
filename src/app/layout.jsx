@@ -1,16 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Rubik } from 'next/font/google'
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import 'react-phone-input-2/lib/style.css';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const rubik = Rubik({
+//   subsets: ['latin'],
+//   variable: '--font-rubik',
+//   weight: ['400', '500', '600', '700'], 
+// })
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Privyr CRM",
@@ -20,9 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50`}>
-        <div style={{ maxWidth: "1024px", margin: "auto"}}>
-          <Navbar />
+      <body className={`antialiased bg-gray-50`}>
+        <Navbar />
+        <div style={{ margin: "auto"}}>
           {children}
         </div>
       </body>

@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Sagar Sood",
+    "source": "LinkedIn",
+    "details": {
+      "contactedBy": "Kunaal Sharma",
+      "notes": "Lead via LinkedIn - Lead Gen - AI Age"
+    },
+    "dateAdded": "Jun 06 - 02:26 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 2,
+    "name": "Yash Prince",
+    "source": "LinkedIn",
+    "details": {
+      "contactedBy": "Kunaal Sharma",
+      "notes": "Lead via LinkedIn - Lead Gen - AI Age"
+    },
+    "dateAdded": "Jun 03 - 03:26 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 3,
+    "name": "Priya Mehta",
+    "source": "Instagram",
+    "details": {
+      "contactedBy": "Unassigned",
+      "notes": "Interested via Instagram story reply"
+    },
+    "dateAdded": "Jul 01 - 10:12 AM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 4,
+    "name": "Rohit Shetty",
+    "source": "Website",
+    "details": {
+      "contactedBy": "Unassigned",
+      "notes": "Filled contact form on website"
+    },
+    "dateAdded": "Jul 02 - 11:15 AM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 5,
+    "name": "Sneha Kapoor",
+    "source": "Facebook",
+    "details": {
+      "contactedBy": "Kunaal Sharma",
+      "notes": "DM after FB ad interaction"
+    },
+    "dateAdded": "Jul 03 - 01:44 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 6,
+    "name": "Arjun Yadav",
+    "source": "Google Ads",
+    "details": {
+      "contactedBy": "Unassigned",
+      "notes": "Clicked but no follow-up yet"
+    },
+    "dateAdded": "Jul 05 - 04:22 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 7,
+    "name": "Divya Sharma",
+    "source": "LinkedIn",
+    "details": {
+      "contactedBy": "Unassigned",
+      "notes": "LinkedIn message request sent"
+    },
+    "dateAdded": "Jul 06 - 09:55 AM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 8,
+    "name": "Kabir Rana",
+    "source": "Referral",
+    "details": {
+      "contactedBy": "Kunaal Sharma",
+      "notes": "Referred by existing client"
+    },
+    "dateAdded": "Jul 07 - 03:10 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 9,
+    "name": "Meera Desai",
+    "source": "Email Campaign",
+    "details": {
+      "contactedBy": "Unassigned",
+      "notes": "Clicked on pricing link"
+    },
+    "dateAdded": "Jul 08 - 02:20 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 10,
+    "name": "Raj Patel",
+    "source": "Instagram",
+    "details": {
+      "contactedBy": "Unassigned",
+      "notes": "Viewed story and clicked link"
+    },
+    "dateAdded": "Jul 09 - 05:47 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 11,
+    "name": "Ayesha Khan",
+    "source": "YouTube",
+    "details": {
+      "contactedBy": "Unassigned",
+      "notes": "Responded to product video"
+    },
+    "dateAdded": "Jul 10 - 12:34 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 12,
+    "name": "Ishaan Malhotra",
+    "source": "Facebook",
+    "details": {
+      "contactedBy": "Unassigned",
+      "notes": "Sent message via Facebook page"
+    },
+    "dateAdded": "Jul 11 - 01:30 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 13,
+    "name": "Kriti Joshi",
+    "source": "Instagram",
+    "details": {
+      "contactedBy": "Kunaal Sharma",
+      "notes": "Responded to reel call-to-action"
+    },
+    "dateAdded": "Jul 12 - 04:19 PM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 14,
+    "name": "Vikram Chauhan",
+    "source": "Referral",
+    "details": {
+      "contactedBy": "Kunaal Sharma",
+      "notes": "Past client recommendation"
+    },
+    "dateAdded": "Jul 13 - 11:08 AM",
+    "status": "Uncontacted"
+  },
+  {
+    "id": 15,
+    "name": "Tanya Singh",
+    "source": "LinkedIn",
+    "details": {
+      "contactedBy": "Unassigned",
+      "notes": "Connection request accepted"
+    },
+    "dateAdded": "Jul 14 - 06:42 PM",
+    "status": "Uncontacted"
+  }
+]

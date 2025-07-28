@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Example – ACME Residences Brochure",
+    "type": "pdf",
+    "sharedCount": "1 time",
+    "lastShared": "Jul 22 - 03:14 PM"
+  },
+  {
+    "id": 2,
+    "title": "Client Onboarding – Welcome Kit",
+    "type": "ppt",
+    "sharedCount": "3 times",
+    "lastShared": "Jul 25 - 01:00 PM"
+  }
+]

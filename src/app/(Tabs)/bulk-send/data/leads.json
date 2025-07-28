@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Anthias Group",
+    "avatarText": "AG",
+    "lastMessage": "Yes you do",
+    "time": "19h ago"
+  },
+  {
+    "id": 2,
+    "name": "Jokemine Limi",
+    "avatarText": "Joker",
+    "lastMessage": "Good morning, yes, let me c",
+    "time": "1d ago"
+  },
+  {
+    "id": 3,
+    "name": "+91 96112 43611",
+    "avatarText": "+9",
+    "lastMessage": "Let me know when we can",
+    "time": "1d ago"
+  },
+  {
+    "id": 4,
+    "name": "+91 88824 24620",
+    "avatarText": "+8",
+    "lastMessage": "Sure",
+    "time": "4d ago"
+  },
+  {
+    "id": 5,
+    "name": "+91 80910 9",
+    "avatarText": "+8",
+    "lastMessage": "✓ Hi! I'm the AI Assistant",
+    "time": "4d ago"
+  },
+  {
+    "id": 6,
+    "name": "my a",
+    "avatarText": "MA",
+    "lastMessage": "✓ Hi! I'm the AI Assistant",
+    "time": "5d ago"
+  },
+  {
+    "id": 7,
+    "name": "सचिन गोयल - योगाचार्य",
+    "avatarText": "सग",
+    "lastMessage": "✓ Hi! I'm the AI Assistant from Ri",
+    "time": "Jul 7"
+  },
+  {
+    "id": 8,
+    "name": "Emeka Ecom Client",
+    "avatarText": "Emeka",
+    "lastMessage": "That's the interpretation of the au...",
+    "time": "Jul 6"
+  }
+]

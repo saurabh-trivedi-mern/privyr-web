@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Rishav",
+    "company": "Rian Infotech Pvt. Ltd.",
+    "itemViewed": "ACME Residence (123 Main St)",
+    "lastViewed": "Jul 22 - 03:15 PM"
+  },
+  {
+    "id": 2,
+    "name": "Sakshi",
+    "company": "Infratech Solutions",
+    "itemViewed": "Sunset Villa (Palm Road)",
+    "lastViewed": "Jul 21 - 05:42 PM"
+  },
+  {
+    "id": 3,
+    "name": "Rohit",
+    "company": "Bright Future Pvt. Ltd.",
+    "itemViewed": "Ocean Breeze Apartments",
+    "lastViewed": "Jul 20 - 11:20 AM"
+  },
+  {
+    "id": 4,
+    "name": "Tanya Bhatia",
+    "company": "Skyline Developers",
+    "itemViewed": "Horizon Heights Tower B",
+    "lastViewed": "Jul 20 - 09:05 AM"
+  },
+  {
+    "id": 5,
+    "name": "Amit Kumar",
+    "company": "NextGen Realty",
+    "itemViewed": "Silver Crest Villas",
+    "lastViewed": "Jul 19 - 02:45 PM"
+  },
+  {
+    "id": 6,
+    "name": "Pooja Singh",
+    "company": "Dream Builders",
+    "itemViewed": "Green Valley Homes",
+    "lastViewed": "Jul 18 - 10:10 AM"
+  },
+  {
+    "id": 7,
+    "name": "Arjun Mehta",
+    "company": "Vision Estates",
+    "itemViewed": "Urban Nest Apartments",
+    "lastViewed": "Jul 18 - 04:30 PM"
+  },
+  {
+    "id": 8,
+    "name": "Neha Verma",
+    "company": "Sunrise Infra",
+    "itemViewed": "Palm Grove Enclave",
+    "lastViewed": "Jul 17 - 01:00 PM"
+  },
+  {
+    "id": 9,
+    "name": "Kabir Thakur",
+    "company": "UrbanEdge Realty",
+    "itemViewed": "Coral Bay Condos",
+    "lastViewed": "Jul 17 - 08:40 AM"
+  },
+  {
+    "id": 10,
+    "name": "Simran Jain",
+    "company": "MetroHomes",
+    "itemViewed": "Elite Heights Tower A",
+    "lastViewed": "Jul 16 - 03:20 PM"
+  }
+]

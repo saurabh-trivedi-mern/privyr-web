@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Example 2: Follow Up – Booking",
+    "preview": "Hi @clientName, I wanted to follow up and check if you had any questions.",
+    "sentCount": "-",
+    "lastSent": "-"
+  },
+  {
+    "id": 2,
+    "title": "Example 3: Follow Up – eBrochure",
+    "preview": "Hi @clientName, hope you had a chance to take a look at the ACME brochure.",
+    "sentCount": "-",
+    "lastSent": "-"
+  },
+  {
+    "id": 3,
+    "title": "Example 4: Meeting Reminder",
+    "preview": "Good morning @clientName! 😊 Looking forward to meeting you later today.",
+    "sentCount": "-",
+    "lastSent": "-"
+  },
+  {
+    "id": 4,
+    "title": "Example 5: Latest Promotions",
+    "preview": "Hi @clientName 👋 Hope you’re having a great week! I’m excited to share our latest offers.",
+    "sentCount": "-",
+    "lastSent": "-"
+  },
+  {
+    "id": 5,
+    "title": "Thank you for your interest in ACME",
+    "preview": "Hi @clientName, Thank you for your interest in AI Agents for lead engagement.",
+    "sentCount": "8 times",
+    "lastSent": "Jun 08 - 02:15 PM"
+  }
+]
