@@ -1,16 +1,17 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { FaFolderOpen, FaSearch } from 'react-icons/fa'
-import files from '../data/filesData.json'
-import FileCard from './FileCard'
+import { useState } from "react";
+import { FaFolderOpen, FaSearch } from "react-icons/fa";
+import { GrAttachment } from "react-icons/gr";
+import files from "../data/filesData.json";
+import FileCard from "./FileCard";
 
 export default function FileManager() {
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState("");
 
-  const filteredFiles = files.filter(file =>
+  const filteredFiles = files.filter((file) =>
     file.title.toLowerCase().includes(search.toLowerCase())
-  )
+  );
 
   return (
     <div className="w-full space-y-6">
@@ -52,24 +53,20 @@ export default function FileManager() {
       </div>
 
       {/* Empty State */}
-      {filteredFiles.length <3 && (
-        <div className="flex flex-col items-center justify-center py-24 text-center text-gray-600">
-          <svg width="48" height="48" fill="none" viewBox="0 0 24 24" className="text-teal-500 mb-4">
-            <path
-              fill="currentColor"
-              d="M7.92 2.751a2.25 2.25 0 0 0-3.17 0l-2 2a2.25 2.25 0 0 0 0 3.18l10.32 10.32a2.25 2.25 0 0 0 3.18 0l2-2a2.25 2.25 0 0 0 0-3.18L7.92 2.75Z"
-            />
-            <path
-              fill="currentColor"
-              d="M16.8 9.75 14.25 12.3 11.7 9.75l2.55-2.55 2.55 2.55Z"
-              opacity=".5"
-            />
-          </svg>
-          <h2 className="text-lg font-semibold text-gray-800">Welcome to your Files</h2>
-          <p className="mt-1 text-sm">Easily manage, share, and track your PDF documents all in one place</p>
-          <button className="mt-4 text-teal-600 font-semibold hover:underline">LEARN MORE</button>
+      {filteredFiles.length > 0 && (
+        <div className="flex flex-col items-center justify-center py-5 text-center text-gray-600">
+          <GrAttachment size={25} className="text-[var(--theme-color)] mb-2" />
+          <h2 className="text-[14px] font-medium text-[#282D36]mb-1">
+            Welcome to your Files
+          </h2>
+          <p className="mt-1 max-w-70 text-[14px] text-black">
+            Easily manage, share, and track your PDF documents all in one place
+          </p>
+          <button className="mt-4 text-[var(--theme-color)] font-semibold hover:underline">
+            LEARN MORE
+          </button>
         </div>
       )}
     </div>
-  )
+  );
 }

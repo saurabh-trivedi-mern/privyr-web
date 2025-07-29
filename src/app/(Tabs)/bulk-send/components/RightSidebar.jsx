@@ -19,7 +19,7 @@ export default function RightSidebar() {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   return (
-    <div className="w-full h-[87.5vh] bg-white border-l border-gray-200 overflow-auto no-scrollbar">
+    <div className="w-full h-[87.5vh] bg-white border-l-2 border-gray-200 overflow-auto no-scrollbar">
       {/* Header */}
       <div className="flex justify-between items-start mb-6">
         <h2 className="text-[32px] font-bold text-[#282D36] pl-3 pt-2">Filters</h2>

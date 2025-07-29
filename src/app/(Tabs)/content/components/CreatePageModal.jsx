@@ -3,18 +3,21 @@
 import React from "react";
 import { IoMdClose } from "react-icons/io";
 import { useRouter } from "next/navigation"; 
+import { FaFileImage, FaChevronRight } from "react-icons/fa";
+import { RiPagesFill } from "react-icons/ri";
+
 
 const templates = [
   {
     title: "Product or Event Page",
     description: "Custom page for your product or event with title, description, images, map and video",
-    emoji: "🛍️",
+    emoji: <RiPagesFill />,
     type: "product-event", 
   },
   {
     title: "Image Gallery",
     description: "Create a custom page from one or more images, description, arranged in a image gallery",
-    emoji: "🖼️",
+    emoji: <FaFileImage />,
     type: "image-gallery",
   },
 ];
@@ -36,7 +39,7 @@ export default function CreatePageModal({ onClose }) {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-500 hover:text-black"
+          className="absolute top-4 right-4 text-gray-500 hover:text-black cursor-pointer"
         >
           <IoMdClose size={22} />
         </button>
@@ -57,18 +60,16 @@ export default function CreatePageModal({ onClose }) {
             >
               <div className="flex justify-between items-center">
                 <div className="flex justify-between items-center gap-4">
-                  <div className="text-2xl mb-2">{tpl.emoji}</div>
+                  <div className="text-2xl mb-2 text-[#006398]">{tpl.emoji}</div>
                   <div>
-                    <h3 className="text-base font-semibold mb-1">{tpl.title}</h3>
+                    <h3 className="text-base font-semibold mb-1 text-[#006398]">{tpl.title}</h3>
                     <p className="text-sm text-gray-600">{tpl.description}</p>
                   </div>
                 </div>
                 <div>
-                  <IoMdClose size={22} />
+                  <FaChevronRight size={15} className="text-[#006398]" />
                 </div>
               </div>
-              
-              
             </div>
           ))}
         </div>

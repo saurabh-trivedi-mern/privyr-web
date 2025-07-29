@@ -14,13 +14,13 @@ export default function AddClientModal({ onClose }) {
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-500 hover:text-black"
+          className="absolute top-3 right-3 text-gray-500 hover:text-black cursor-pointer"
         >
           <IoMdClose size={22} />
         </button>
 
         {/* Title */}
-        <h2 className="text-xl font-bold mb-4">Add New Client</h2>
+        <h2 className="text-[32px] font-bold mb-4">Add New Client</h2>
 
         {/* Form */}
         <form className="space-y-4">
@@ -30,7 +30,7 @@ export default function AddClientModal({ onClose }) {
             <input
               type="text"
               placeholder="e.g. Katherine Lim"
-              className="w-full mt-1 p-2 border rounded bg-gray-100"
+              className="w-full mt-1 p-2 border border-gray-200 rounded bg-gray-100 focus:outline-0"
             />
           </div>
 
@@ -40,7 +40,7 @@ export default function AddClientModal({ onClose }) {
             <input
               type="text"
               placeholder="e.g. Katherine"
-              className="w-full mt-1 p-2 border rounded bg-gray-100"
+              className="w-full mt-1 p-2 border border-gray-200 rounded bg-gray-100 focus:outline-0"
             />
             <p className="text-xs text-gray-500 mt-1">
               Display name is what your clients will see.{" "}
@@ -60,8 +60,8 @@ export default function AddClientModal({ onClose }) {
               country={"in"}
               value={mobileNumber}
               onChange={setMobileNumber}
-              inputClass="!w-full !bg-gray-100 !border !rounded !py-2 !pl-12 !text-sm"
-              buttonClass="!border !bg-white"
+              inputClass="!w-full !bg-gray-100 !border !border-gray-200 !rounded !py-2 !pl-12 !text-sm"
+              buttonClass="!border !border-gray-200 !bg-white"
               containerClass="!w-full"
             />
           </div>
@@ -73,8 +73,8 @@ export default function AddClientModal({ onClose }) {
               country={"in"}
               value={whatsappNumber}
               onChange={setWhatsappNumber}
-              inputClass="!w-full !bg-gray-100 !border !rounded !py-2 !pl-12 !text-sm"
-              buttonClass="!border !bg-white"
+              inputClass="!w-full !bg-gray-100 !border !border-gray-200 !rounded !py-2 !pl-12 !text-sm"
+              buttonClass="!border !border-gray-200 !bg-white"
               containerClass="!w-full"
             />
           </div>
@@ -85,7 +85,7 @@ export default function AddClientModal({ onClose }) {
             <input
               type="email"
               placeholder="e.g. email@example.com"
-              className="w-full mt-1 p-2 border rounded bg-gray-100"
+              className="w-full mt-1 p-2 border border-gray-200 rounded bg-gray-100 focus:outline-0"
             />
           </div>
 
