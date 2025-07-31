@@ -1,25 +1,47 @@
-'use client'
+"use client";
 
-import HeaderComponent from './components/HeaderComponent';
-import LeftPanel from './components/LeftPanel';
-import MiddleChat from './components/MiddleChat';
-import RightTimeline from './components/RightTimeline';
+import Header from "./components/Header";
+import Details from "./components/Details";
+import Chat from "./components/Chat";
+import Timeline from "./components/Timeline";
 
-export default function SingleClientPage() {
+export default function Page() {
   return (
-    <div className="flex flex-col h-screen">
-      <HeaderComponent />
-      <div className="flex flex-1 overflow-hidden">
-        <div className="w-full lg:w-1/4 border-r overflow-y-auto no-scrollbar">
-          <LeftPanel />
-        </div>
-        <div className="w-full lg:w-2/4 border-r flex flex-col">
-          <MiddleChat />
-        </div>
-        <div className="w-full lg:w-1/4 overflow-y-auto no-scrollbar">
-          <RightTimeline />
-        </div>
+    <div className="bg-[#f6f8fb] min-h-screen p-4">
+      <Header />
+      <div className="flex gap-4 mt-4">
+        <Details />
+        <Chat />
+        <Timeline />
       </div>
     </div>
   );
 }
+
+
+
+
+// import Header from "./components/Header";
+// import Timeline from "./components/Timeline";
+// import Details from "./components/Details";
+
+// export default function ClientPage({ params }) {
+//   return (
+//     <div className="max-w-[1024px] mx-auto py-6">
+//       <Header />
+
+//       {/* Main content area */}
+//       <div className="mt-2 p-4 flex gap-6">
+//         {/* Details fixed at 320px */}
+//         <div className="w-[650px]">
+//           <Details readOnly={true} />
+//         </div>
+
+//         {/* Timeline fills remaining space up to max 650px */}
+//         <div className="flex-1 max-w-[300px]">
+//           <Timeline />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
