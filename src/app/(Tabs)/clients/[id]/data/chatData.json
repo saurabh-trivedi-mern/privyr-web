@@ -1,20 +1,24 @@
 [
   {
-    "message": "Hello Rishav,\n\nI believe you must have had a good weekend?\n\nThis idea came to mind and I quickly thought to drop it here.\n\nFrom the real estate marketplace, I want us to link all services together.\n\nFor instance.\n\nPeople can actually see a listing at the marketplace and choose rent financing or mortgage by a click of a button and it will direct them to either page, where they can start the process…\n\nSo typically, the rent finance or mortgage button is by default on every property listing in the site…\n\nWe can build on this when we discuss this week please…\n\nThank you",
+    "id": 1,
+    "message": "Hello Rishav,\n\nI believe you must have had a good weekend?\n\nThis idea came to mind and I quickly thought to drop it here.\n\nFrom the real estate marketplace, I want us to link all services together.\nFor instance.\n\nPeople can actually see a listing at the marketplace and choose rent financing or mortgage by a click of a button and it will direct them to either page, where they can start the process…\n\nSo typically, the rent finance or mortgage button is by default on every property listing in the site…\n\nWe can build on this when we discuss this week please…\n\nThank you",
     "sender": "Customer",
     "timeAgo": "23 days ago"
   },
   {
+    "id": 2,
     "message": "Thank you.",
     "sender": "Customer",
     "timeAgo": "22 days ago"
   },
   {
+    "id": 3,
     "message": "Are we meeting this week?",
     "sender": "Customer",
     "timeAgo": "22 days ago"
   },
   {
+    "id": 4,
     "message": "I'll call you right back.",
     "sender": "Customer",
     "timeAgo": "20 days ago"

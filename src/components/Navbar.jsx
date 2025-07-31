@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
@@ -18,6 +18,7 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -25,7 +26,7 @@ export default function Navbar() {
       <div className="max-w-[1024px] mx-auto px-4 flex items-center justify-between">
         {/* Left: Logo + Mobile Menu Toggle */}
         <div className="flex items-center gap-4 sm:hidden">
-          <Link href="/" className="text-cyan-600 font-bold text-xl">
+          <Link href="/" className="text-[var(--theme-color)] font-bold text-xl">
             🔗
           </Link>
           <button
@@ -38,16 +39,16 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <div className="hidden md:flex gap-8 items-center justify-center">
-          <Link href="/" className="text-cyan-600 font-bold text-xl">
+          <Link href="/" className="text-[var(--theme-color)] font-bold text-xl">
             🔗
           </Link>
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`flex items-center gap-2 text-[16px] font-medium transition py-3 ${
+              className={`flex items-center gap-2 text-[16px] font-medium transition p-3 ${
                 pathname.startsWith(link.href)
-                  ? "text-[var(--theme-color)] border-b-4"
+                  ? "text-[var(--theme-color)] border-b-4 border-[var(--theme-color)]"
                   : "text-gray-600 hover:text-black"
               }`}
             >
@@ -57,8 +58,11 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Avatar */}
-        <div>
+        {/* Avatar → Redirect to /account */}
+        <div
+          className="cursor-pointer"
+          onClick={() => router.push("/account")}
+        >
           <FaUserCircle className="text-2xl text-gray-500" />
         </div>
       </div>

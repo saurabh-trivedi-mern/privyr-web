@@ -3,12 +3,17 @@ import React from 'react';
 import chatData from '../data/chatData.json';
 import { BsFillSendFill } from 'react-icons/bs';
 import { FaUserCircle } from 'react-icons/fa';
+import { FiPhone, FiVideo } from "react-icons/fi";
+import { LuChartColumn } from "react-icons/lu";
+import { IoMdInformationCircleOutline } from "react-icons/io";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
-export default function MiddleChat() {
+
+export default function Chat() {
   return (
-    <div className="flex flex-col h-[87.5vh] relative bg-[#f5f5f5]">
+    <div className="min-w-[730px] flex flex-col h-[87.5vh] relative bg-[#f5f5f5]">
       {/* Header */}
-      <div className="flex items-center gap-3 px-4 py-2 bg-white border-b">
+      <div className="flex items-center gap-3 px-4 py-2 bg-white border-b border-gray-200">
         <FaUserCircle className="text-4xl text-gray-500" />
         <div className="flex flex-col">
           <h2 className="font-medium">Anthias Group</h2>
@@ -16,10 +21,11 @@ export default function MiddleChat() {
         </div>
         <div className="ml-auto flex items-center gap-4 text-gray-500 text-sm">
           <span className="cursor-pointer">👤 Human</span>
-          <span>📊</span>
-          <span>📞</span>
-          <span>📍</span>
-          <span>⋮</span>
+          <span><LuChartColumn /></span>
+          <span><FiPhone /></span>
+          <span><FiVideo /></span>
+          <span><IoMdInformationCircleOutline/></span>
+          <span><BsThreeDotsVertical /></span>
         </div>
       </div>
 
@@ -44,14 +50,14 @@ export default function MiddleChat() {
       </div>
 
       {/* Input Box */}
-      <div className="bg-white w-full absolute bottom-0 right-0 px-4 py-3 flex items-center border-t">
+      <div className="bg-[#F0F2F5] w-full absolute bottom-0 right-0 p-5 flex items-center border-t border-gray-200">
         <button className="mr-2 text-xl text-gray-500">📎</button>
         <input
           type="text"
           placeholder="Type a message"
-          className="flex-1 px-4 py-2 border rounded-full bg-gray-100 outline-none"
+          className="flex-1 px-4 py-2 rounded-md bg-white outline-none border-2 border-gray-200"
         />
-        <button className="ml-2 text-white bg-[#2c85f7] p-2 rounded-full">
+        <button className="ml-2 text-white bg-[#78CDBD] p-2 rounded-md">
           <BsFillSendFill />
         </button>
       </div>

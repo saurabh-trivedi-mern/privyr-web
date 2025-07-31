@@ -1,18 +1,22 @@
-'use client';
+import CalendarPanel from "./components/CalendarPanel";
+import FilterPanel from "./components/FiltersPanel";
+import TimelinePanel from "./components/TimelinePanel";
 
-import CalendarSection from './components/CalendarSection';
-import FiltersSection from './components/FiltersSection';
-import TimelineSection from './components/TimelineSection';
-
-export default function ActivitiesPage() {
+export default function ActivityPage() {
   return (
-    <div className="flex min-h-screen max-w-[1024px] mx-auto bg-[#f4f5fa] px-4 py-6 gap-4">
-      <div className="w-1/4 space-y-4">
-        <CalendarSection />
-        <FiltersSection />
-      </div>
-      <div className="w-3/4">
-        <TimelineSection />
+    <div className="bg-[#f4f5fa] py-6 min-h-screen">
+      <div className="max-w-[1024px] mx-auto px-4">
+        <h1 className="text-2xl font-bold text-gray-900 mb-6">Activity Timeline</h1>
+        <div className="grid grid-cols-1 md:grid-cols-[240px_1fr] gap-10">
+          {/* Left Sidebar */}
+          <div className="space-y-6">
+            <CalendarPanel />
+            <FilterPanel />
+          </div>
+
+          {/* Timeline */}
+          <TimelinePanel />
+        </div>
       </div>
     </div>
   );
